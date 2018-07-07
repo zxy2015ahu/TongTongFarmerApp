@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/title_bar_layout"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_bar_back_text" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_bar_layout"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/item_bg_line"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip" >
+
+            <ImageView
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/search_icon" />
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/choice_produce_hint"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#666"
+                android:textColorHint="#BBB"
+                android:textSize="15dip" />
+
+            <TextView
+                android:id="@+id/search_bn"
+                android:layout_width="50dip"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/search_text"
+                android:textColor="@drawable/textcolor_green"
+                android:textSize="14dip" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
+
+            <GridLayout
+                android:id="@+id/produce_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="4" >
+            </GridLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

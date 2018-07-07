@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar_height"
+    android:background="@drawable/title_bar_bg" >
+
+    <LinearLayout
+        android:id="@+id/back_bn"
+        android:layout_width="@dimen/title_bar_height"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_bg"
+        android:clickable="true"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:src="@drawable/back"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/title_text_color"
+        android:textSize="@dimen/title_text_size" />
+    
+    <LinearLayout
+        android:id="@+id/right_bn"
+        android:layout_width="@dimen/title_bar_height"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_bg"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center" >
+        <TextView
+            android:id="@+id/right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:textSize="16sp"
+            android:textColor="@color/aliwx_white"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rp_shape_corner"
+    >
+
+    <ImageView
+        android:id="@+id/iv_pay_closed"
+        style="@style/DialogClosedButtonStyle"
+        />
+
+    <TextView
+        style="@style/DialogTitleStyle"
+        android:text="@string/dialog_title_pay"
+        />
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/DividerStyle"
+        android:layout_below="@id/iv_pay_closed"/>
+
+    <TextView
+        android:id="@+id/tv_add_card_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_line"
+        android:layout_marginTop="@dimen/size60px"
+        android:gravity="center"
+        android:text="@string/red_money"
+        android:textColor="@color/rp_text_light_grey"
+        android:textSize="@dimen/font42px"
+        />
+
+    <TextView
+        android:id="@+id/tv_pay_money_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_add_card_title"
+        android:layout_marginTop="@dimen/size21px"
+        android:gravity="center"
+        android:textColor="@color/rp_text_black"
+        android:textSize="@dimen/font90px"
+        />
+
+    <View
+        android:id="@+id/divider_top"
+        style="@style/DividerStyleNoHead"
+        android:layout_below="@id/tv_pay_money_amount"
+        android:layout_marginTop="@dimen/size60px"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout_pay_change"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size132px"
+        android:layout_below="@id/divider_top"
+        >
+
+        <ImageView
+            android:id="@+id/iv_change_icon"
+            style="@style/PayTypeIconStyle"
+            android:src="@drawable/rp_change_icon"
+            />
+
+        <TextView
+            android:id="@+id/tv_pay_change_balance"
+            style="@style/DialogPayTypeStyle"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/size24px"
+            android:layout_toRightOf="@id/iv_change_icon"
+            android:text="@string/my_change"
+            />
+
+        <ImageView
+            android:id="@+id/iv_change_arrow"
+            style="@style/DialogPayTypeRightArrow"
+            />
+    </RelativeLayout>
+
+    <View style="@style/DividerStyleNoHead"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_pay_add_card"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size132px"
+        android:layout_below="@id/layout_pay_change"
+        >
+
+        <ImageView
+            android:id="@+id/iv_add_card_icon"
+            style="@style/PayTypeIconStyle"
+            android:src="@drawable/rp_add_card_icon"
+            />
+
+        <TextView
+            android:id="@+id/tv_add_card_text"
+            style="@style/DialogPayTypeStyle"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/size24px"
+            android:layout_toRightOf="@id/iv_add_card_icon"
+            android:text="@string/add_bankcard"
+            />
+
+        <ImageView style="@style/DialogPayTypeRightArrow"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/DividerStyleNoHead"
+        android:layout_below="@id/layout_pay_add_card"
+        android:layout_marginBottom="@dimen/size69px"
+        />
+
+</RelativeLayout>

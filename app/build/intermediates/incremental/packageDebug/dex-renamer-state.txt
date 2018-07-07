@@ -1,0 +1,7 @@
+#Fri Jul 06 20:45:48 CST 2018
+base.0=D\:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_663f8c25c24546e5c0fa08657329422649036a27
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=D\:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_3fe1ee5e075abb582904fa06a9b21ca3b944161f\\classes.dex
+base.1=D\:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_3fe1ee5e075abb582904fa06a9b21ca3b944161f
+file.0=D\:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_663f8c25c24546e5c0fa08657329422649036a27\\classes.dex

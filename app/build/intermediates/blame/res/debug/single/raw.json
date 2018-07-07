@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\aliwx_sent.mp3",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\268ac271ff2e2aebc13da772971e7d718badb4f2\\output\\res\\raw\\aliwx_sent.mp3"
+    },
+    {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\head.png",
+        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\raw\\head.png"
+    },
+    {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\aliwx_itemmatch.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\268ac271ff2e2aebc13da772971e7d718badb4f2\\output\\res\\raw\\aliwx_itemmatch.xml"
+    },
+    {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\avator.png",
+        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\raw\\avator.png"
+    },
+    {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\aliwx_play_completed.mp3",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\268ac271ff2e2aebc13da772971e7d718badb4f2\\output\\res\\raw\\aliwx_play_completed.mp3"
+    }
+]

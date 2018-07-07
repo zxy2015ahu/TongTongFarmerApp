@@ -1,0 +1,26 @@
+<resources>
+
+    <dimen name="title_bar_height">44dip</dimen>
+    <dimen name="title_text_size">18dip</dimen>
+    <dimen name="line_height">0.5dip</dimen>
+    <dimen name="line_height_1dp">1dip</dimen>
+    <dimen name="default_margin_padding">10dp</dimen>
+    <dimen name="middle_height">40dp</dimen>
+    <dimen name="app_bar_height">240dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="item_height">48dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="default_margin_top">120dp</dimen>
+    <dimen name="toast_text_size">16sp</dimen>
+    <dimen name="toast_horizontal_padding_icon_side">22dp</dimen>
+    <dimen name="toast_horizontal_padding">16dp</dimen>
+    <dimen name="toast_vertical_padding">8dp</dimen>
+    <dimen name="icon_padding">4dp</dimen>
+    <dimen name="default_corner_radius">5dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="city_list_margin_left_dimen">20.0dip</dimen>
+    <dimen name="city_list_margin_right_dimen">40.0dip</dimen>
+    <dimen name="city_list_text_size">14.0sp</dimen>、
+    <dimen name="city_hot_item_height">36.0dip</dimen>
+    <dimen name="wode_text_size">20sp</dimen>
+</resources>

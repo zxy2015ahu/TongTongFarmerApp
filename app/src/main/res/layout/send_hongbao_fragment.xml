@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/layout_address"
+        style="@style/SendMoneyRLayoutStyle"
+        >
+        <TextView
+            android:id="@+id/tv_adress"
+            style="@style/SendMoneyLeftTextViewStyle"
+            android:text="在哪里发"/>
+
+        <ImageView
+            android:id="@+id/iv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/size30px"
+            android:layout_marginRight="@dimen/size45px"
+            android:src="@drawable/rp_arrow_forward"/>
+
+        <TextView
+            android:id="@+id/tv_address_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/iv_address"
+            android:layout_toRightOf="@id/tv_adress"
+            android:ellipsize="end"
+            android:gravity="center|right"
+            android:maxEms="11"
+            android:maxLines="1"
+            android:text="@string/tv_all_person"
+            android:textColor="@color/rp_text_black"
+            android:textSize="@dimen/font45px"/>
+    </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/layout_members"
+    style="@style/SendMoneyRLayoutStyle"
+    android:layout_below="@id/layout_address"
+    >
+    <TextView
+        android:id="@+id/tv_receive"
+        style="@style/SendMoneyLeftTextViewStyle"
+        android:text="@string/tv_who_can_receive"/>
+
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/size30px"
+        android:layout_marginRight="@dimen/size45px"
+        android:src="@drawable/rp_arrow_forward"/>
+
+    <TextView
+        android:id="@+id/tv_receive_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/iv_arrow"
+        android:layout_toRightOf="@id/tv_receive"
+        android:ellipsize="end"
+        android:gravity="center|right"
+        android:maxEms="11"
+        android:maxLines="1"
+        android:text="@string/tv_all_person"
+        android:textColor="@color/rp_text_black"
+        android:textSize="@dimen/font45px"/>
+</RelativeLayout>
+
+<TextView
+    android:id="@+id/tv_money_count"
+    style="@style/CommonLeftTextViewStyle"
+    android:layout_below="@id/layout_members"
+    android:layout_marginTop="@dimen/size45px"
+    android:text="@string/group_money_count"/>
+
+<TextView
+    android:id="@+id/tv_count_unit"
+    style="@style/CommonRightTextViewStyle"
+    android:layout_below="@id/layout_members"
+    android:layout_marginTop="@dimen/size45px"
+    android:text="@string/count_unit"/>
+<FrameLayout
+    android:layout_below="@id/layout_members"
+    android:layout_marginTop="@dimen/size45px"
+    android:layout_toLeftOf="@id/tv_count_unit"
+    android:layout_toRightOf="@id/tv_money_count"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/et_money_count"
+        style="@style/CommonEditTextStyle"
+        android:inputType="number"
+        android:maxLength="9"/>
+    <TextView
+        android:id="@+id/hint_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/rp_text_light_grey"
+        android:textSize="15sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_gravity="right|center_vertical"
+        android:text="@string/hint_money_count"
+        />
+</FrameLayout>
+<TextView
+    android:id="@+id/tv_group_count"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tv_money_count"
+    android:layout_marginLeft="15dp"
+    android:text="周边约有0人可领"
+    android:layout_marginTop="6dp"
+    android:textColor="@color/rp_text_light_grey"
+    android:textSize="@dimen/font36px"/>
+
+<RelativeLayout
+    android:id="@+id/rl_rp_amount"
+    style="@style/SendMoneyRLayoutStyle"
+    android:layout_below="@+id/tv_group_count"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <RelativeLayout
+        android:id="@+id/money_amount_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_total_money"
+            style="@style/SendMoneyLeftTextViewStyle"
+            android:text="@string/group_money_total"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_money_unit"
+            style="@style/CommonRightTextViewStyle"
+            android:text="@string/money_unit"/>
+        <FrameLayout
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/tv_money_unit"
+            android:layout_toRightOf="@id/tv_total_money"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_money_amount"
+                android:inputType="numberDecimal"
+                android:layout_height="44dp"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/rp_text_black"
+                android:textSize="15sp"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:maxLength="12"/>
+            <TextView
+                android:id="@+id/hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/rp_text_light_grey"
+                android:textSize="15sp"
+                android:layout_gravity="right|center_vertical"
+                android:text="@string/hint_money_amount"
+                />
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+<!--红包切换按钮-->
+<TextView
+    android:id="@+id/tv_type_info"
+    style="@style/SendMoneyGroupRuleTipsStyle"
+    android:layout_below="@id/rl_rp_amount"
+    android:layout_marginBottom="@dimen/size45px"
+    android:text="最大金额不能超过200元"
+    android:textColor="@color/rp_text_light_grey"/>
+
+<!--红包切换按钮-->
+
+<!--祝福语-->
+<ImageView
+    android:id="@+id/iv_refresh"
+    android:layout_width="@dimen/size186px"
+    android:layout_height="@dimen/size186px"
+    android:layout_alignParentRight="true"
+    android:layout_below="@id/tv_type_info"
+    android:background="@color/rp_background_white"
+    android:scaleType="centerInside"
+    android:src="@drawable/rp_refresh"/>
+
+<View
+    android:id="@+id/view_line_group"
+    android:layout_width="1px"
+    android:layout_height="@dimen/size186px"
+    android:layout_below="@id/tv_type_info"
+    android:layout_toLeftOf="@id/iv_refresh"
+    android:background="@color/rp_money_bg_color"/>
+
+<EditText
+    android:id="@+id/et_greetings"
+    style="@style/SendMoneyGreetingsStyle"
+    android:layout_below="@id/tv_type_info"
+    android:layout_toLeftOf="@id/view_line_group"
+    android:hint="@string/default_money_greeting"/>
+<!--祝福语-->
+
+<TextView
+    android:id="@+id/tv_money"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/iv_refresh"
+    android:layout_marginTop="@dimen/size72px"
+    android:gravity="center"
+    android:textColor="@color/rp_text_black"
+    android:textSize="@dimen/font108px"/>
+
+<Button
+    android:id="@+id/btn_group_put_money"
+    style="@style/SendMoneyButtonStyle"
+    android:layout_below="@id/tv_money"
+    android:text="@string/btn_put_money"/>
+
+<RelativeLayout
+    android:id="@+id/pop_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size63px"
+    android:background="@color/rp_msg_red"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/tv_popup_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/rp_text_yellow"
+        android:textSize="@dimen/font45px"/>
+</RelativeLayout>
+
+<View
+    android:id="@+id/target_layout"
+    android:layout_width="@dimen/size180px"
+    android:layout_height="@dimen/size180px"
+    android:layout_centerInParent="true"/>
+
+<TextView
+    style="@style/SendMoneyBottomTextStyle"
+    android:text="@string/send_money_bottom_text"/>
+
+
+</RelativeLayout>

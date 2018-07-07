@@ -1,0 +1,3 @@
+# view AndroidManifest.xml #generated:67
+-keep class com.tongtong.purchaser.application.MyApplication { <init>(...); }
+

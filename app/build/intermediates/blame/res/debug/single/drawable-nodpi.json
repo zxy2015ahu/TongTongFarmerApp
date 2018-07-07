@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\grzx_bg.png",
+        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\drawable-nodpi\\grzx_bg.png"
+    },
+    {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-nodpi\\grzx_bg_qiandao.png",
+        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\drawable-nodpi\\grzx_bg_qiandao.png"
+    }
+]

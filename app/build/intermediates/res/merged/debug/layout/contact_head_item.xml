@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="44dp"
+    android:background="@color/aliwx_white">
+    <RelativeLayout
+        android:id="@+id/back_bn"
+        android:layout_width="48dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerInParent="true"
+            android:src="@drawable/details_back_normal"
+            />
+    </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/aliwx_common_text_color"
+            android:textSize="17sp"
+            android:layout_centerInParent="true"
+            android:id="@+id/title_text"/>
+
+        <RelativeLayout
+            android:id="@+id/right_bn"
+            android:layout_width="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="26dip"
+                android:layout_centerInParent="true"
+                android:layout_height="26dip"
+                android:src="@drawable/contacts_add"/>
+        </RelativeLayout>
+</RelativeLayout>

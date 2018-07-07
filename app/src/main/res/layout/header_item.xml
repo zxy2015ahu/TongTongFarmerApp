@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:background="#e6e6e6"
+    >
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/aliwx_common_text_color"
+        android:textSize="16sp"
+        android:text="2018年3月"/>
+    <TextView
+        android:id="@+id/income"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="支出撒的发生都发"
+        android:layout_marginTop="2dp"
+        android:textSize="15sp"
+        android:layout_below="@id/title"
+        android:textColor="@android:color/darker_gray"
+        />
+</RelativeLayout>

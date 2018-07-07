@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar.Tranparent" parent="AppBaseTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+    </style>
+    <style name="AppTheme.NoActionBar.RedPacket">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/rp_top_red_color</item>
+    </style>
+</resources>

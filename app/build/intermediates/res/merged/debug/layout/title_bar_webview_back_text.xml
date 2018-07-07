@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+                android:gravity="center_vertical"
+    android:layout_height="@dimen/title_bar_height"
+    android:background="@color/aliwx_white" >
+
+    <LinearLayout
+        android:id="@+id/left_from"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_bg"
+        android:clickable="true"
+        android:paddingLeft="5dp"
+        android:gravity="center_vertical" >
+        <LinearLayout
+            android:id="@+id/back_bn"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:src="@drawable/white_bg_back"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/aliwx_common_text_color"
+                android:text="返回"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/aliwx_common_text_color"
+            android:text="关闭"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="150dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/aliwx_common_text_color"
+        android:textSize="18sp"
+        android:singleLine="true"
+        />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/line_height"
+    android:layout_alignParentBottom="true"
+    android:background="@color/aliwx_wx_line_color"/>
+</RelativeLayout>

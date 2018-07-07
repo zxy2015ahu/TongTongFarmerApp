@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/title_bar_layout"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_bar_back_text_add" />
+    
+    <LinearLayout 
+        android:id="@+id/release_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:layout_alignParentBottom="true"
+        >
+        <Button 
+            android:id="@+id/release_bn"
+            android:layout_width="320dip"
+            android:layout_height="50dip"
+            android:background="@drawable/bn_bg_green_big"
+            android:text="@string/release"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:textSize="16dip"
+            />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="350dip"
+        android:layout_below="@id/title_bar_layout"
+        android:layout_above="@id/release_layout"
+        android:layout_margin="10dip"
+        android:background="@drawable/round_white_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/item_bg_green_line"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/produce_title"
+                android:textColor="#666"
+                android:textSize="16dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/produce_operation"
+                android:textColor="#666"
+                android:textSize="16dip" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="#00000000"
+            android:scrollbars="none"
+            android:divider="@null"
+            android:clickable="false"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip" >
+        </ListView>
+    </LinearLayout>
+
+    
+    
+   
+
+</RelativeLayout>

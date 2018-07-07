@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <com.tongtong.purchaser.view.ClipImageLayout
+        android:id="@+id/clip_image_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/okBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:layout_margin="20dip"
+            android:background="@drawable/bn_bg_green_big"
+            android:textColor="#fff"
+            android:textSize="16dip"
+            android:text="@string/confirm" />
+
+        <Button
+            android:id="@+id/cancleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:background="@drawable/bn_bg_transparent_dotted"
+            android:textColor="#fff"
+            android:layout_margin="20dip"
+            android:textSize="16dip"
+            android:text="@string/cancel" />
+    </LinearLayout>
+</RelativeLayout>

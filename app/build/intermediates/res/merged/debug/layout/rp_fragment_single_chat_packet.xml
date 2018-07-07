@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_money_amount"
+        style="@style/CommonLeftTextViewStyle"
+        android:layout_marginTop="@dimen/size45px"
+        android:layout_marginBottom="@dimen/size45px"
+        android:text="@string/money_amount"/>
+
+    <TextView
+        android:id="@+id/tv_money_unit"
+        style="@style/CommonRightTextViewStyle"
+        android:layout_marginTop="@dimen/size45px"
+        android:layout_marginBottom="@dimen/size45px"
+        android:text="@string/money_unit"/>
+
+    <EditText
+        android:id="@+id/et_money_amount"
+        style="@style/CommonEditTextStyle"
+        android:layout_marginTop="@dimen/size45px"
+        android:layout_marginBottom="@dimen/size45px"
+        android:layout_toLeftOf="@id/tv_money_unit"
+        android:layout_toRightOf="@id/tv_money_amount"
+        android:hint="@string/hint_money_amount"
+        android:inputType="numberDecimal"
+        android:maxLength="12"/>
+
+    <ImageView
+        android:id="@+id/iv_refresh"
+        android:layout_width="@dimen/size186px"
+        android:layout_height="@dimen/size186px"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_money_amount"
+        android:background="@color/rp_background_white"
+        android:scaleType="centerInside"
+        android:src="@drawable/rp_refresh"/>
+
+    <View
+        android:id="@+id/view_line_single"
+        android:layout_width="1px"
+        android:layout_height="@dimen/size186px"
+        android:layout_below="@id/tv_money_amount"
+        android:layout_toLeftOf="@id/iv_refresh"
+        android:background="@color/rp_money_bg_color"/>
+
+    <EditText
+        android:id="@+id/et_greetings"
+        style="@style/SendMoneyGreetingsStyle"
+        android:layout_below="@id/tv_money_amount"
+        android:layout_toLeftOf="@id/view_line_single"
+        android:hint="@string/default_money_greeting"/>
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_refresh"
+        android:layout_marginTop="@dimen/size72px"
+        android:gravity="center"
+        android:textColor="@color/rp_text_black"
+        android:textSize="@dimen/font108px"/>
+
+    <Button
+        android:id="@+id/btn_single_put_money"
+        style="@style/SendMoneyButtonStyle"
+        android:layout_below="@id/tv_money"
+        android:text="@string/btn_put_money"/>
+
+    <LinearLayout
+        android:id="@+id/target_layout"
+        android:layout_width="@dimen/size180px"
+        android:layout_height="@dimen/size180px"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"/>
+
+    <TextView
+        style="@style/SendMoneyBottomTextStyle"
+        android:text="@string/send_money_bottom_text"/>
+</RelativeLayout>

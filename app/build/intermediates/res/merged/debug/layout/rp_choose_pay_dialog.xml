@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rp_shape_corner"
+    >
+
+    <ImageView
+        android:id="@+id/ib_choose_pay_back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size132px"
+        android:paddingLeft="@dimen/size45px"
+        android:paddingRight="@dimen/size45px"
+        android:scaleType="centerInside"
+        android:src="@drawable/rp_back_arrow_grey"
+        />
+
+    <TextView
+        style="@style/DialogTitleStyle"
+        android:text="@string/choose_pay_type_title"
+        />
+
+    <View
+        android:id="@+id/item_line"
+        style="@style/DividerStyle"
+        android:layout_below="@id/ib_choose_pay_back"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pay_type_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_line"
+        android:scrollbars="vertical"
+        />
+
+    <View
+        style="@style/DividerStyleNoHead"
+        android:layout_below="@id/pay_type_list"
+        android:layout_marginBottom="@dimen/size69px"
+        />
+
+</RelativeLayout>

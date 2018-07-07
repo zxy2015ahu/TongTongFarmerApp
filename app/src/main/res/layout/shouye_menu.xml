@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+                android:background="@color/aliwx_white"
+    android:paddingTop="20dp"
+    android:paddingBottom="@dimen/default_margin_padding"
+    android:layout_height="wrap_content" >
+    <com.tongtong.purchaser.widget.NoScrollGridView
+        android:id="@+id/list"
+        android:listSelector="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="20dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="4"/>
+</RelativeLayout>

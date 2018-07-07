@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>   
+<resources>
+    <color name="colorPrimary">#FF1aad19</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="my_toast_bg">#DD444444</color>
+    <color name="loading_dialog_bg">#DD444444</color>
+    <color name="logo_cunt_down_bg">#66444444</color>
+    <color name="main_color">#1aad19</color>
+    <color name="title_bar_bg">#444444</color>
+    <color name="title_text_color">#FFFFFF</color>
+    <color name="float_transparent">#00000000</color>
+    <color name="textcolor_gray_normal">#888888</color>
+    <color name="textcolor_gray_pressed">#BBBBBB</color>
+    <color name="price_color">#EE6614</color>
+    <color name="textcolor_green_pressed">#DDDDDD</color>
+    <color name="textcolor_green_normal">#1aad19</color>
+    <color name="dark_green">#33691E</color>
+    <color name="textcolor_blue_pressed">#DDDDDD</color>
+    <color name="textcolor_blue_normal">#1aadff</color>
+    <color name="colorMainBackground">#E0F2F1</color>
+    <color name="textcolor_red_pressed">#DDDDDD</color>
+    <color name="textcolor_red_normal">#FF0000</color>
+    <color name="back_pressed">#33FFFFFF</color>
+    <color name="back_normal">#00FFFFFF</color>
+    
+    <color name="business_pressed">#33000000</color>
+    <color name="business_normal">#00000000</color>
+    
+    <color name="black">#000000</color>
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="gold">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="toolbar_text_normal">#666</color>
+    <color name="toolbar_text_selected">#FFF</color>
+    <color name="bg_color">#48e7df</color>
+    <color name="txt_color">#333333</color>
+    <color name="gray_bg">#f5f5f5</color>
+    <color name="img_preesed_color">#4d5255</color>
+    <color name="anhuang">#DF8D06</color>
+    <color name="line_color">#EEEEEE</color>
+    <color name="color_70">#707070</color>
+    <color name="lsq_filter_title_default_color">#9fa0a0</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="backgroundColor">#e6444444</color>
+    <color name="textColor">#ffffff</color>
+    <color name="city_search_bg">#fff2f2f2</color>
+    <color name="city_item_text_color">#ff5c5c5c</color>
+    <color name="blue">#4064de</color>
+    <color name="green">#4b993b</color>
+</resources>
