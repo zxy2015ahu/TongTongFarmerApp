@@ -10,11 +10,16 @@ import android.support.design.widget.BottomSheetDialog;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
 import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewStub;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.alibaba.mobileim.conversation.YWConversation;
@@ -29,6 +34,7 @@ import com.tongtong.purchaser.model.FarmerReleaseInformationModel;
 import com.tongtong.purchaser.utils.HttpTask;
 import com.tongtong.purchaser.utils.UrlUtil;
 import com.tongtong.purchaser.utils.UserUtil;
+import com.tongtong.purchaser.view.AutoListView;
 import com.tongtong.purchaser.view.Mydivider;
 
 import java.lang.reflect.Field;
@@ -42,13 +48,17 @@ import java.util.Locale;
 import cn.addapp.pickers.picker.DateTimePicker;
 import dmax.dialog.SpotsDialog;
 
+import static com.tongtong.purchaser.R.id.num;
+import static com.tongtong.purchaser.R.id.price;
+
 /**
  * Created by Administrator on 2018-01-29.
  */
 
-public class OrderInfoActivity extends BaseActivity implements View.OnClickListener,HttpTask.HttpTaskHandler{
+public class OrderInfoActivity extends BaseActivity implements View.OnClickListener,HttpTask.HttpTaskHandler,
+        CompoundButton.OnCheckedChangeListener{
     private JsonObject releaseInfo;
-    private EditText price,num;
+    private EditText zhongliang_price,zhonglinag_num,zhonglinag_total,amount_price,amount_num,amount_total,total_num,total_price,total_total;
     private TextView time,address;
     private DateTimePicker picker;
     private DisplayMetrics dm;
@@ -60,7 +70,15 @@ public class OrderInfoActivity extends BaseActivity implements View.OnClickListe
     private TextView number_unit,price_unit;
     private BottomSheetDialog number_dialog,price_dialog;
     private SharedPreferences sp;
-    private String punit="";
+    private String punit="",aunit="",estimatedQuantity="",runit;
+    private RadioButton an_amount,an_price,an_total;
+    private View zhongliang,amount_view,total_view;
+    private static final int TYPE_ZHONG_LINAG_ORDER=1;
+    private static final int TYPE_AMOUNT_ORDER=2;
+    private static final int TYPE_TOTAL_ORDER=3;
+    private int type=TYPE_ZHONG_LINAG_ORDER;
+    private ViewStub amount,total;
+    private String area,price;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,16 +90,80 @@ public class OrderInfoActivity extends BaseActivity implements View.OnClickListe
         releaseInfo=new JsonParser().parse(release).getAsJsonObject();
         ((TextView)findViewById(R.id.name)).setText(releaseInfo.get("f_name").getAsString());
         ((TextView)findViewById(R.id.produce_name)).setText(releaseInfo.get("p_name").getAsString());
-        number_unit=((TextView)findViewById(R.id.number_unit));
-        price_unit=((TextView)findViewById(R.id.price_unit));
-        price_unit.setText("元/"+releaseInfo.get("punit").getAsString());
-        number_unit.setText(releaseInfo.get("aunit").getAsString());
+        number_unit=((TextView)findViewById(R.id.zhongliang_number_unit));
+        price_unit=((TextView)findViewById(R.id.zhongliang_price_unit));
+        an_amount=(RadioButton)findViewById(R.id.money_amount_layout);
+        an_price=(RadioButton)findViewById(R.id.goods_now_price);
+        an_total=(RadioButton)findViewById(R.id.tv_total_money);
+        amount=(ViewStub) findViewById(R.id.amount);
+        total=(ViewStub) findViewById(R.id.total);
+        an_amount.setOnCheckedChangeListener(this);
+        an_price.setOnCheckedChangeListener(this);
+        an_total.setOnCheckedChangeListener(this);
+        zhongliang=findViewById(R.id.zhongliang);
+        an_amount.setChecked(true);
+        punit=releaseInfo.get("punit").getAsString();
+        aunit=releaseInfo.get("aunit").getAsString();
+        runit=releaseInfo.get("runit").getAsString();
+        area=releaseInfo.get("area").getAsString();
+        price=releaseInfo.get("price").getAsString();
+        estimatedQuantity=releaseInfo.get("estimatedQuantity").getAsString();
+        price_unit.setText("元/"+punit);
+        number_unit.setText(aunit);
         price_unit.setOnClickListener(this);
         number_unit.setOnClickListener(this);
-        price=(EditText) findViewById(R.id.price);
+        zhongliang_price=(EditText) findViewById(R.id.zhongliang_price);
+        zhonglinag_total=(EditText) findViewById(R.id.zhongliang_total);
+        zhonglinag_num=(EditText) findViewById(R.id.zhongliang_num);
+        zhonglinag_num.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+            @Override
+            public void afterTextChanged(Editable s) {
+                if(s.length()>0){
+                    if(zhongliang_price.getText().toString().length()>0){
+                        double to=Double.valueOf(s.toString())*Double.valueOf(zhongliang_price.getText().toString());
+                        if(to%1.0==0){
+                            zhonglinag_total.setText(String.valueOf((int)to));
+                        }else{
+                            zhonglinag_total.setText(String.format("%.2f",to));
+                        }
+                    }
+                }
+            }
+        });
+        zhongliang_price.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+            @Override
+            public void afterTextChanged(Editable s) {
+                if(s.length()>0){
+                    if(zhonglinag_num.getText().toString().length()>0){
+                        double to=Double.valueOf(s.toString())*Double.valueOf(zhonglinag_num.getText().toString());
+                        if(to%1.0==0){
+                            zhonglinag_total.setText(String.valueOf((int)to));
+                        }else{
+                            zhonglinag_total.setText(String.format("%.2f",to));
+                        }
+                    }
+                }
+            }
+        });
         dingjin=(EditText) findViewById(R.id.dingjin);
-        num=(EditText) findViewById(R.id.num);
-        num.setText(releaseInfo.get("estimatedQuantity").getAsInt()+"");
+        zhonglinag_num.setText(estimatedQuantity);
+        zhongliang_price.setHint("该农户预期价格为"+price+"元/"+punit);
         findViewById(R.id.time_select).setOnClickListener(this);
         findViewById(R.id.address_select).setOnClickListener(this);
         findViewById(R.id.order).setOnClickListener(this);
@@ -91,6 +173,68 @@ public class OrderInfoActivity extends BaseActivity implements View.OnClickListe
         sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         dm=new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);
+    }
+
+    private void showAmount(){
+        zhongliang.setVisibility(View.GONE);
+        if(total_view!=null){
+            total_view.setVisibility(View.GONE);
+        }
+        if(amount_view==null){
+            amount_view=amount.inflate();
+            amount_num=(EditText) amount_view.findViewById(R.id.amount_num);
+            amount_price=(EditText) amount_view.findViewById(R.id.amount_price);
+            amount_total=(EditText) amount_view.findViewById(R.id.amount_total);
+            ((TextView)amount_view.findViewById(R.id.number_unit)).setText(runit);
+            ((TextView)amount_view.findViewById(R.id.price_unit)).setText("元/"+punit);
+            amount_num.setText(area);
+        }
+        amount_view.setVisibility(View.VISIBLE);
+    }
+    private void showTotal(){
+        zhongliang.setVisibility(View.GONE);
+        if(amount_view!=null){
+            amount_view.setVisibility(View.GONE);
+        }
+        if(total_view==null){
+            total_view=total.inflate();
+            total_num=(EditText) total_view.findViewById(R.id.total_num);
+            total_price=(EditText) total_view.findViewById(R.id.total_price);
+            total_total=(EditText) total_view.findViewById(R.id.total_total);
+            ((TextView)total_view.findViewById(R.id.total_unit)).setText(runit);
+            ((TextView)total_view.findViewById(R.id.total_unit_unit)).setText(aunit);
+            total_num.setText(estimatedQuantity);
+            total_price.setText(area);
+        }
+        total_view.setVisibility(View.VISIBLE);
+    }
+    private void showZhongliang(){
+        if(amount_view!=null){
+            amount_view.setVisibility(View.GONE);
+        }
+        if(total_view!=null){
+            total_view.setVisibility(View.GONE);
+        }
+        zhongliang.setVisibility(View.VISIBLE);
+    }
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        if(isChecked){
+            switch (buttonView.getId()){
+                case R.id.money_amount_layout:
+                    type=TYPE_ZHONG_LINAG_ORDER;
+                    showZhongliang();
+                    break;
+                case R.id.goods_now_price:
+                    type=TYPE_AMOUNT_ORDER;
+                    showAmount();
+                    break;
+                case R.id.tv_total_money:
+                    type=TYPE_TOTAL_ORDER;
+                    showTotal();
+                    break;
+            }
+        }
     }
 
     @Override
@@ -165,18 +309,21 @@ public class OrderInfoActivity extends BaseActivity implements View.OnClickListe
             }
             price_dialog.show();
         }else if(view.getId()==R.id.order){
-            if(TextUtils.isEmpty(price.getText().toString().trim())){
-                showTips("请输入订购单价。");
-                return;
+            if(type==TYPE_ZHONG_LINAG_ORDER){
+                if(TextUtils.isEmpty(zhongliang_price.getText().toString().trim())){
+                    showTips("请输入订购单价。");
+                    return;
+                }
+                if(TextUtils.isEmpty(zhonglinag_num.getText().toString().trim())){
+                    showTips("请输入订购数量。");
+                    return;
+                }
+                if(Float.valueOf(zhonglinag_num.getText().toString())>releaseInfo.get("estimatedQuantity").getAsInt()){
+                    showTips("订购数量不能超过农户能提供的产品数量。");
+                    return;
+                }
             }
-            if(TextUtils.isEmpty(num.getText().toString().trim())){
-                showTips("请输入订购数量。");
-                return;
-            }
-            if(Float.valueOf(num.getText().toString())>releaseInfo.get("estimatedQuantity").getAsInt()){
-                showTips("订购数量不能超过农户能提供的产品数量。");
-                return;
-            }
+
             if(TextUtils.isEmpty(address.getText().toString())){
                 showTips("请选择交货地点。");
                 return;
@@ -206,9 +353,9 @@ public class OrderInfoActivity extends BaseActivity implements View.OnClickListe
             requestJson.addProperty("send_lat",info.latLonPoint.latitude);
             requestJson.addProperty("send_lng",info.latLonPoint.longitude);
             requestJson.addProperty("beizhu",beizhu.getText().toString());
-            requestJson.addProperty("price",price.getText().toString());
+            //requestJson.addProperty("price",price.getText().toString());
             requestJson.addProperty("produce_name",releaseInfo.get("p_name").getAsString());
-            requestJson.addProperty("amount",num.getText().toString());
+           // requestJson.addProperty("amount",num.getText().toString());
             requestJson.addProperty("dingjin",TextUtils.isEmpty(dingjin.getText().toString())?0:Integer.valueOf(dingjin.getText().toString()));
             requestJson.addProperty("purchase_id",UserUtil.getUserModel(this).getId());
             requestJson.addProperty("purchase_name",UserUtil.getUserModel(this).getName());
@@ -345,10 +492,10 @@ public class OrderInfoActivity extends BaseActivity implements View.OnClickListe
             int order_id=resultJson.get("order_id").getAsInt();
             YWConversation conversation= MyApplication.getConversation(releaseInfo.get("f_phone").getAsString());
             if(conversation!=null){
-                YWMessage message=ChattingOperationCustom.createCustomOrderMessage(releaseInfo.get("p_name").getAsString(),
-                        Double.valueOf(price.getText().toString()),Integer.valueOf(num.getText().toString()),
-                                order_id,releaseInfo.get("punit").getAsString(),TextUtils.isEmpty(dingjin.getText().toString())?0:Integer.valueOf(dingjin.getText().toString()),UserUtil.getUserModel(OrderInfoActivity.this).getPhone(),info.latLonPoint.latitude,info.latLonPoint.longitude,info.title,info.addressName);
-                conversation.getMessageSender().sendMessage(message,120,null);
+//                YWMessage message=ChattingOperationCustom.createCustomOrderMessage(releaseInfo.get("p_name").getAsString(),
+//                        Double.valueOf(price.getText().toString()),Integer.valueOf(num.getText().toString()),
+//                                order_id,releaseInfo.get("punit").getAsString(),TextUtils.isEmpty(dingjin.getText().toString())?0:Integer.valueOf(dingjin.getText().toString()),UserUtil.getUserModel(OrderInfoActivity.this).getPhone(),info.latLonPoint.latitude,info.latLonPoint.longitude,info.title,info.addressName);
+//                conversation.getMessageSender().sendMessage(message,120,null);
                 ChattingOperationCustom.sendSysMsg("你向农户发出预订",releaseInfo.get("f_phone").getAsString());
                 ChattingOperationCustom.sendTransMsg("有收购人向你发来预订单",releaseInfo.get("f_phone").getAsString());
 //                YWSystemMessage ywSystemMessage=new YWSystemMessage();

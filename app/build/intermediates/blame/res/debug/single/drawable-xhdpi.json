@@ -4,12 +4,12 @@
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\drawable-xhdpi\\collection_pressed.png"
     },
     {
-        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_title_back_white.png",
-        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_title_back_white.png"
-    },
-    {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\common_forward_normal.png",
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\drawable-xhdpi\\common_forward_normal.png"
+    },
+    {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_title_back_white.png",
+        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\drawable-xhdpi\\ic_title_back_white.png"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\umeng_socialize_fav.png",
@@ -20,6 +20,10 @@
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\point_down.png"
     },
     {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\favour_normal.png",
+        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\favour_normal.png"
+    },
+    {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\duigou_normal.png",
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\duigou_normal.png"
     },
@@ -28,16 +32,12 @@
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\vector_drawable_fenleichazhao.png"
     },
     {
-        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\favour_normal.png",
-        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\favour_normal.png"
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\warm.png",
+        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\warm.png"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\favour_not_white.png",
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\favour_not_white.png"
-    },
-    {
-        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\warm.png",
-        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\warm.png"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\zf_fydy_icon_mute.png",
@@ -72,12 +72,12 @@
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\drawable-xhdpi\\lingqian_mingxi.png"
     },
     {
-        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ling_hongbao.png",
-        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\drawable-xhdpi\\ling_hongbao.png"
-    },
-    {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\under_line.9.png",
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\drawable-xhdpi\\under_line.9.png"
+    },
+    {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ling_hongbao.png",
+        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\drawable-xhdpi\\ling_hongbao.png"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\fuwuxieyi_icon.png",
@@ -152,28 +152,28 @@
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\jubao_normal.png"
     },
     {
-        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\search_black.png",
-        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\search_black.png"
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\canchecked.png",
+        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\canchecked.png"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\weight_icon.png",
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\drawable-xhdpi\\weight_icon.png"
     },
     {
-        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\canchecked.png",
-        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\canchecked.png"
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\search_black.png",
+        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\search_black.png"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\dadianhua.png",
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\dadianhua.png"
     },
     {
-        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\vector_drawable_jiaoyi.png",
-        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\vector_drawable_jiaoyi.png"
-    },
-    {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_cancel.9.png",
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\drawable-xhdpi\\btn_cancel.9.png"
+    },
+    {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\vector_drawable_jiaoyi.png",
+        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\vector_drawable_jiaoyi.png"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\favour_not_normal.png",
@@ -208,12 +208,12 @@
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\vector_drawable_xiaoxi_checked.png"
     },
     {
-        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_cancel_pressed.9.png",
-        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\drawable-xhdpi\\btn_cancel_pressed.9.png"
-    },
-    {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\banben_icon.png",
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\banben_icon.png"
+    },
+    {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\btn_cancel_pressed.9.png",
+        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\drawable-xhdpi\\btn_cancel_pressed.9.png"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\difference.png",

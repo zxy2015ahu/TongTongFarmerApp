@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Process;
 import android.support.multidex.MultiDex;
+import android.util.Log;
 
 import com.alibaba.mobileim.YWAPI;
 import com.alibaba.mobileim.aop.AdviceBinder;
@@ -17,6 +18,9 @@ import com.alibaba.mobileim.conversation.YWConversation;
 import com.alibaba.sdk.android.feedback.impl.FeedbackAPI;
 import com.alibaba.sdk.android.feedback.util.ErrorCode;
 import com.alibaba.sdk.android.feedback.util.FeedbackErrorCallback;
+import com.alibaba.sdk.android.push.CloudPushService;
+import com.alibaba.sdk.android.push.CommonCallback;
+import com.alibaba.sdk.android.push.noonesdk.PushServiceFactory;
 import com.alibaba.wxlib.util.SysUtil;
 import com.baidu.location.LocationClient;
 import com.baidu.location.LocationClientOption;
@@ -41,9 +45,12 @@ import com.xdandroid.hellodaemon.DaemonEnv;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
+import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
+
+import static com.taobao.accs.client.AccsConfig.build;
 
 
 public class MyApplication extends Application implements Thread.UncaughtExceptionHandler{
@@ -60,7 +67,7 @@ public class MyApplication extends Application implements Thread.UncaughtExcepti
 		super.onCreate();
 		instance=this;
 		dbManager=new DBManager(this);
-		client=new OkHttpClient.Builder().sslSocketFactory(MySSLSocketFactory.getSocketFactory(this)).build();
+		client=new OkHttpClient.Builder().sslSocketFactory(MySSLSocketFactory.getSocketFactory(this)).readTimeout(30, TimeUnit.SECONDS).build();
 		Thread.setDefaultUncaughtExceptionHandler(this);
 		CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
 				.setDefaultFontPath("font/aui-iconfont.ttf")
@@ -90,6 +97,7 @@ public class MyApplication extends Application implements Thread.UncaughtExcepti
 		FeedbackAPI.init(this,"24853824","0a0bb8e8473d7a070036742b462698a3");
 		FeedbackAPI.setTranslucent(false);
 		FeedbackAPI.setBackIcon(R.drawable.white_bg_back);
+		initCloudChannel(this);
 		if(SysUtil.isTCMSServiceProcess(this)){
 			return;
 		}
@@ -106,6 +114,24 @@ public class MyApplication extends Application implements Thread.UncaughtExcepti
 			YWAPI.setEnableCrashHandler(false);
 			YWAPI.enableSDKLogOutput(true);
 		}
+	}
+	/**
+	 * 初始化云推送通道
+	 * @param applicationContext
+	 */
+	private void initCloudChannel(Context applicationContext) {
+		PushServiceFactory.init(applicationContext);
+		CloudPushService pushService = PushServiceFactory.getCloudPushService();
+		pushService.register(applicationContext, new CommonCallback() {
+			@Override
+			public void onSuccess(String response) {
+				Log.d("TONGTONG", "init cloudchannel success");
+			}
+			@Override
+			public void onFailed(String errorCode, String errorMessage) {
+				Log.d("TONGTONG", "init cloudchannel failed -- errorcode:" + errorCode + " -- errorMessage:" + errorMessage);
+			}
+		});
 	}
 	public OkHttpClient getClient(){
 		return client;

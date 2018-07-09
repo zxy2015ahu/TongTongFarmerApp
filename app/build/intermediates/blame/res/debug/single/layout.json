@@ -4,20 +4,20 @@
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\layout\\map_fragment.xml"
     },
     {
-        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\aliwx_smily_item.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\268ac271ff2e2aebc13da772971e7d718badb4f2\\output\\res\\layout\\aliwx_smily_item.xml"
-    },
-    {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\rp_choose_pay_dialog.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\74ef6f6b65adbf8b1c769d9f137f5eb4a6a48152\\output\\res\\layout\\rp_choose_pay_dialog.xml"
     },
     {
-        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\gallery_main.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\fedb4daeb72d99c00a0876df6e12683b4b77d659\\output\\res\\layout\\gallery_main.xml"
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\aliwx_smily_item.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\268ac271ff2e2aebc13da772971e7d718badb4f2\\output\\res\\layout\\aliwx_smily_item.xml"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\jz_layout_clarity.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\dd2f09af5f2051d2630bf04cd8c08052eb5d3ebc\\output\\res\\layout\\jz_layout_clarity.xml"
+    },
+    {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\gallery_main.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\fedb4daeb72d99c00a0876df6e12683b4b77d659\\output\\res\\layout\\gallery_main.xml"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\ali_feedback_error.xml",
@@ -44,12 +44,12 @@
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\layout\\produce_details_viewer.xml"
     },
     {
-        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\rp_loading.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\74ef6f6b65adbf8b1c769d9f137f5eb4a6a48152\\output\\res\\layout\\rp_loading.xml"
-    },
-    {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\aliwx_common_simple_title.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\268ac271ff2e2aebc13da772971e7d718badb4f2\\output\\res\\layout\\aliwx_common_simple_title.xml"
+    },
+    {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\rp_loading.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\74ef6f6b65adbf8b1c769d9f137f5eb4a6a48152\\output\\res\\layout\\rp_loading.xml"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\aliwx_conversation_custom_view_item.xml",
@@ -140,16 +140,16 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\74ef6f6b65adbf8b1c769d9f137f5eb4a6a48152\\output\\res\\layout\\rp_fragment_verify_dentity.xml"
     },
     {
-        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\70d8988889b2fbed43fa64149486ef6980f3ebc2\\output\\res\\layout\\abc_activity_chooser_view.xml"
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\70d8988889b2fbed43fa64149486ef6980f3ebc2\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\release_list_layout.xml",
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\layout\\release_list_layout.xml"
     },
     {
-        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\70d8988889b2fbed43fa64149486ef6980f3ebc2\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\70d8988889b2fbed43fa64149486ef6980f3ebc2\\output\\res\\layout\\abc_activity_chooser_view.xml"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\title_bar_back_text_dial2.xml",
@@ -276,16 +276,16 @@
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\layout\\open_rp_packet.xml"
     },
     {
-        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\rp_divider.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\74ef6f6b65adbf8b1c769d9f137f5eb4a6a48152\\output\\res\\layout\\rp_divider.xml"
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\rp_popup_layout.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\74ef6f6b65adbf8b1c769d9f137f5eb4a6a48152\\output\\res\\layout\\rp_popup_layout.xml"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\chatting_selfhelp_sub_menu_item.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\268ac271ff2e2aebc13da772971e7d718badb4f2\\output\\res\\layout\\chatting_selfhelp_sub_menu_item.xml"
     },
     {
-        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\rp_popup_layout.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\74ef6f6b65adbf8b1c769d9f137f5eb4a6a48152\\output\\res\\layout\\rp_popup_layout.xml"
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\rp_divider.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\74ef6f6b65adbf8b1c769d9f137f5eb4a6a48152\\output\\res\\layout\\rp_divider.xml"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\aliwx_image_detail_fragment.xml",
@@ -300,12 +300,12 @@
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\layout\\common_grid_item.xml"
     },
     {
-        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\aliwx_select_success_normal_popupview_.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\268ac271ff2e2aebc13da772971e7d718badb4f2\\output\\res\\layout\\aliwx_select_success_normal_popupview_.xml"
-    },
-    {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pager_navigator_layout_no_scroll.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\6125a460716f5e2f7f542accc9e656841d748ef5\\output\\res\\layout\\pager_navigator_layout_no_scroll.xml"
+    },
+    {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\aliwx_select_success_normal_popupview_.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\268ac271ff2e2aebc13da772971e7d718badb4f2\\output\\res\\layout\\aliwx_select_success_normal_popupview_.xml"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\gallery_mini_item.xml",
@@ -590,6 +590,10 @@
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\rp_details_list_header.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\74ef6f6b65adbf8b1c769d9f137f5eb4a6a48152\\output\\res\\layout\\rp_details_list_header.xml"
+    },
+    {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\amount_layout.xml",
+        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\layout\\amount_layout.xml"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\aliwx_fragment_contacts.xml",
@@ -1266,6 +1270,10 @@
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\aliwx_imageviewer.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\268ac271ff2e2aebc13da772971e7d718badb4f2\\output\\res\\layout\\aliwx_imageviewer.xml"
+    },
+    {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\total_layout.xml",
+        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\layout\\total_layout.xml"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\aliwx_chatting_detail_list.xml",

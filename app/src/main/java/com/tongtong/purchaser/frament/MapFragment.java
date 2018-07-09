@@ -316,7 +316,9 @@ public class MapFragment extends BaseFrament implements BDLocationListener,Baidu
     }
     @Override
     public void onGetGeoCodeResult(GeoCodeResult geoCodeResult) {
-
+        if(geoCodeResult!=null&&geoCodeResult.error== SearchResult.ERRORNO.NO_ERROR){
+            map.getBaiduMap().animateMapStatus(MapStatusUpdateFactory.newLatLngZoom(geoCodeResult.getLocation(),15f));
+        }
     }
     @Override
     public void onGetReverseGeoCodeResult(ReverseGeoCodeResult reverseGeoCodeResult) {
@@ -902,7 +904,7 @@ public class MapFragment extends BaseFrament implements BDLocationListener,Baidu
         adcodePop.dismiss();
         tv_city_name.setText(region.getRegion_name());
         adcode=region.getAdcode();
-        geoCoder.geocode(new GeoCodeOption().address(region.getRegion_name()).city(""));
+        geoCoder.geocode(new GeoCodeOption().address(region.getRegion_name()).city(cregion!=null?cregion.getRegion_name():""));
     }
     private void initData(View container){
         final TextView select_box=(TextView) container.findViewById(R.id.select_box);

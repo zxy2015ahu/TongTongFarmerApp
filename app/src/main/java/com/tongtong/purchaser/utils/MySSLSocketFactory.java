@@ -34,7 +34,7 @@ public class MySSLSocketFactory {
         InputStream client_input = context.getResources().openRawResource(R.raw.head);//客户端证书
         try {
             SSLContext sslContext = SSLContext.getInstance("TLS");
-            KeyStore trustStore = KeyStore.getInstance(KeyStore.getDefaultType());
+            KeyStore trustStore = KeyStore.getInstance(KEY_STORE_TYPE_BKS);
             trustStore.load(trust_input, KEY_STORE_TRUST_PASSWORD.toCharArray());
             KeyStore keyStore = KeyStore.getInstance(KEY_STORE_TYPE_P12);
             keyStore.load(client_input, KEY_STORE_PASSWORD.toCharArray());

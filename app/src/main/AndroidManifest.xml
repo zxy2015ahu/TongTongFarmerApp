@@ -48,6 +48,8 @@
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="RaRMPGXj2kdyrCOiWOfGYtQhUxjApqf8"/>
         <meta-data android:name="com.tongtong.purchaser.utils.OkHttpGlideModule" android:value="GlideModule"/>
+        <meta-data android:name="com.alibaba.app.appkey" android:value="24853824"/> <!-- 请填写你自己的- appKey -->
+        <meta-data android:name="com.alibaba.app.appsecret" android:value="0a0bb8e8473d7a070036742b462698a3"/> <!-- 请填写你自己的appSecret -->
         <activity
             android:name="com.tongtong.purchaser.activity.LogoActivity"
             android:theme="@style/AppTheme.Splash"
@@ -317,7 +319,37 @@
                 <action android:name="com.tongtong.purchaser.APP_START_UP" />
             </intent-filter>
         </receiver>
-
+        <!--消息接收监听器-->
+        <receiver android:name="com.tongtong.purchaser.receiver.MyMessageReciever">
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.taobao.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.RECEIVE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
         <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"> </service>
         <service android:name="com.tongtong.purchaser.service.PurchaserLocationService" >
         </service>
@@ -332,6 +364,33 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_path" />
         </provider>
+        <!-- 通道保持服务 -->
+        <service android:name="com.alibaba.sdk.android.push.ChannelService"
+            android:exported="true" android:process=":channel">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.SERVICE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING_V4" />
+                <category android:name="taobao" />
+            </intent-filter>
+        </service>
+        <!-- 消息接收服务 -->
+        <service android:name="com.alibaba.sdk.android.push.MsgService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.NOTIFY_ACTION" />
+            </intent-filter>
+        </service>
+        <!-- 消息接收增强服务（可提高通知/消息达到率）-->
+        <service android:name="com.alibaba.sdk.android.push.channel.TaobaoRecvService" android:exported="true">
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

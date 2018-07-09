@@ -4,6 +4,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\268ac271ff2e2aebc13da772971e7d718badb4f2\\output\\res\\color\\aliwx_at_msg_mark_all_read_text_color.xml"
     },
     {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\single_choice_text_color.xml",
+        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\color\\single_choice_text_color.xml"
+    },
+    {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\aliwx_hongbao_send_text_color.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\268ac271ff2e2aebc13da772971e7d718badb4f2\\output\\res\\color\\aliwx_hongbao_send_text_color.xml"
     },
@@ -28,12 +32,12 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\70d8988889b2fbed43fa64149486ef6980f3ebc2\\output\\res\\color\\abc_hint_foreground_material_light.xml"
     },
     {
-        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\70d8988889b2fbed43fa64149486ef6980f3ebc2\\output\\res\\color\\abc_tint_switch_track.xml"
-    },
-    {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\70d8988889b2fbed43fa64149486ef6980f3ebc2\\output\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_track.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\70d8988889b2fbed43fa64149486ef6980f3ebc2\\output\\res\\color\\abc_tint_switch_track.xml"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\color\\check_colors.xml",

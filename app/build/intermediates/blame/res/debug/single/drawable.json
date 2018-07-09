@@ -648,6 +648,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\7b92cc901c4fca818a43daf0023b061dd26a0ce1\\output\\res\\drawable\\design_snackbar_background.xml"
     },
     {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\single_choice_selected.xml",
+        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\drawable\\single_choice_selected.xml"
+    },
+    {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\item_bg_line.xml",
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\drawable\\item_bg_line.xml"
     },
@@ -782,6 +786,10 @@
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dialog_background.xml",
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\drawable\\dialog_background.xml"
+    },
+    {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\single_choice_normal.xml",
+        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\drawable\\single_choice_normal.xml"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
@@ -1382,6 +1390,10 @@
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bn_bg_green_small_pressed.xml",
         "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\drawable\\bn_bg_green_small_pressed.xml"
+    },
+    {
+        "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\single_choince_back.xml",
+        "source": "D:\\android_workspace\\TongTongPurchaserApp\\app\\src\\main\\res\\drawable\\single_choince_back.xml"
     },
     {
         "merged": "D:\\android_workspace\\TongTongPurchaserApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
